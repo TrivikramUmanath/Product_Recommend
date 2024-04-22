@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import Tfi
+Vectorizer
+
+df = pd.read_csv('prod.csv')  # Replace 'your_dataframe.csv' with the path to your dataframe
 
 # Load TF-IDF Vectorizer
 with open('tfidf_vectorizer.pkl', 'rb') as f:
@@ -26,7 +29,7 @@ def recommend_products(product_description):
     return recommended_products[[ 'product_title']]
 
 # Assuming df is your original dataframe containing product details
-df = X_encoded.reset_index(drop=True)  # Reset index for df to match indices in X_encoded
+#df = X_encoded.reset_index(drop=True)  # Reset index for df to match indices in X_encoded
 
 # Streamlit app
 st.title('Product Recommendation System')
