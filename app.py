@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-from sklearn.feature_extraction.text import TfiVectorizer
+from sklearn.feature_extraction.text import TfidVectorizer
 
 df = pd.read_csv('prod.csv')  # Replace 'your_dataframe.csv' with the path to your dataframe
 
